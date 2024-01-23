@@ -1,0 +1,46 @@
+# Numeric - Alphabet Conversion
+chr(65) - 'A'                          chr(90) - 'Z'
+chr(97) - 'a'                          cchr(122) - 'z'
+
+# Alphabet - Numberic Conversion
+ord('A') - 65
+
+# Join elements of a list
+a = ['a', 'b', 'c']
+
+str = ''.join(a)    ----->    abc
+print(*a) ---->  prints all members of the list seperated by white spaces.  a b c
+
+# Permutations and Combinantions
+
+math.comb(n,k)      ----> Calculates nCk
+math.perm(n,k)      ----> Calculates nPk
+
+
+# *args    ----> Used if we dont know how many inputs we'll get
+
+def tel_hai_and_add_numbers(*numbers, name):
+  print(sum(numbers))
+  print(f'{name} hello!')
+
+tel_hai_and_add_numbers(1,2,3,4,name = 'Sanjay')
+tel_hai_and_add_numbers(*1,2,3, name = 'jinu')                    # Both are correct input statements, numbers is stored as a tuple
+
+
+# **kwargs   ---> Key worded arguments, stores as dictionary
+
+def info(**kwags):
+  print(kwags)
+
+info(name = 'Sanjay', age = 17)                               # Many such paramenters like name, age, gender etc, etc can be given. Input can also be given as a dictionary.
+
+
+
+
+
+
+
+
+
+
+
